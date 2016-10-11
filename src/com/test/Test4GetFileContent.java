@@ -13,7 +13,7 @@ public class Test4GetFileContent {
 	public void test(){
 		String value = "";
 		try {
-			value = GetFileContent.getContent("password");
+			value = GetFileContent.getContent("password",GetFileContent.CURRENT_TYPE);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
