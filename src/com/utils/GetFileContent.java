@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URLDecoder;
 import java.util.Properties;
 
@@ -50,7 +51,7 @@ public class GetFileContent {
 		path = URLDecoder.decode(path, "UTF-8");
 		System.out.println(path);
 		File file = new File(path);
-		properties.load(new FileInputStream(file));
+		properties.load(new FileReader(path));
 //		System.out.println(file);
 		value = properties.getProperty(key);
 		if(value == null){
