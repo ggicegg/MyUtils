@@ -19,6 +19,8 @@ public class GetFileContent {
 	/**
 	 * 通用从类加载目录加载配置资源文件工具
 	 * @return
+	 * @param key 要找的关键字
+	 * @param type 从当前目录还是根目录寻找
 	 * @throws FileNotFoundException
 	 * @throws IOException
 	 */
